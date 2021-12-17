@@ -2,21 +2,47 @@
 
 <head>
   <title>Helpful</title>
-  <!-- TODO Add logo -->
-  <!-- <link rel="icon" href="logo.png" type="image/x-icon"> -->
-  <!-- Our Styles -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="helpful.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
   <insert-html link="https://swag31415.github.io/Portfolio/inserts/head.html"></insert-html>
 </head>
 
 <body>
   <insert-html link="https://swag31415.github.io/Portfolio/inserts/menu.html"></insert-html>
   <main class="container">
-    <!-- TODO Add body -->
+    <h1>Advice AI</h1>
+    <div class="row">
+      <div class="input-field col s12 m8">
+        <textarea id="question" class="materialize-textarea"></textarea>
+        <label for="question">How's Life? What qualms you?</label>
+      </div>
+      <div class="input-field col s4 m2">
+        <input type="number" id="age" class="validate" min="0" max="200">
+        <label for="age">How's old are you?</label>
+      </div>
+      <button id="ask" class="input-field btn green col s4 m2 right waves-effect">ASK!</button>
+    </div>
+    <p class="flow-text center" id="advice" style="font-family: Kaushan Script, Arial, Helvetica, sans-serif;">semper ubi sub ubi</p>
+    <div id="loader" class="progress center">
+      <div class="indeterminate"></div>
+    </div>
+    <h2>How to use</h2>
+    <ol>
+      <li>In the first text box describe your situation and ask a question. For example: "I am sad. What should I do?"</li>
+      <li>Optionally enter your age in the second box</li>
+      <li>Press Ask to get advice</li>
+      <li>If you don't like the advice: Click Ask Again!</li>
+    </ol>
+    <h2>The background</h2>
+    <p>This is the combined effort of <a href="https://github.com/swag31415">myself</a>, <a href="https://github.com/zakidane">Zaki</a>, and Brandon. You can find our code <a href="https://github.com/zakidane/Advice_AI">on Github</a>.</p>
+    <p>I originally got the idea from an interaction I had with my high school Psychology teacher Mr. Copeland. He gave me red solo cups and told me to do one nice thing for someone. This is the thing!</p>
   </main>
   <insert-html link="https://swag31415.github.io/Portfolio/inserts/foot.html"></insert-html>
   <!-- HTML Inserts -->
   <script src="https://swag31415.github.io/Portfolio/js/html_inserts.js"></script>
+  <!-- Jquery Slim -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <!-- Our Scripts -->
   <script src="js/main.js"></script>
 </body>
