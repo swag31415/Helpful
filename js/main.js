@@ -20,7 +20,7 @@ $("#ask").click(e => {
   if (e.target.innerText == "ASK!") {
     $("#advice").hide()
     $("#loader").show()
-    fetch("https://miscserver.herokuapp.com/helpful", {
+    fetch("https://misc-server-07ti.onrender.com/helpful", {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({question: curr_question})
